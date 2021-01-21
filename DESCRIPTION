@@ -12,7 +12,7 @@ Authors@R: c(
 	    person("Chad", "Klumb", role=c("ctb"), email="cklumb@gmail.com"))
 Depends:
     ergm (>= 3.11.0),
-    network (>= 1.15)
+    network (>= 1.17)
 Imports:
     statnet.common (>= 4.5.0),
     coda (>= 0.19.2),
