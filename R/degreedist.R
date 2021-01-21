@@ -223,7 +223,6 @@ mixingmatrix.egodata <- function(object, attrname, rowprob = FALSE, weight = TRU
   if(rowprob){
     mxmat <- mxmat/rowSums(mxmat)
   }
-  mxmat
+  structure(mxmat, class = c("mixingmatrix", "table"), directed = FALSE,
+            bipartite = FALSE)
 }
-  
-  
