@@ -38,12 +38,7 @@ of each group nominates an alter of each group.
 
 data(faux.mesa.high)
 fmh.ego <- as.egodata(faux.mesa.high)
-
-(mm <- mixingmatrix(faux.mesa.high,"Grade"))
-(mm.ego <- mixingmatrix(fmh.ego,"Grade"))
-
-stopifnot(isTRUE(all.equal({tmp<-unclass(mm); diag(tmp) <- diag(tmp)*2;
-tmp}, mm.ego, check.attributes=FALSE)))
+mixingmatrix(fmh.ego, "Grade")
 
 }
 \seealso{
